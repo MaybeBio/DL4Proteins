@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Report: nnfs</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 1200px; margin: 0 auto; color: #333; }
+        h1, h2, h3 { color: #24292e; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        code { background-color: #f6f8fa; padding: 0.2em 0.4em; border-radius: 3px; font-family: monospace; }
+        pre { background-color: #f6f8fa; padding: 16px; overflow: auto; border-radius: 6px; }
+        blockquote { border-left: 4px solid #dfe2e5; color: #6a737d; padding-left: 1em; margin-left: 0; }
+        
+        /* Table Styles */
+        table { border-collapse: collapse; width: 100%; margin-bottom: 16px; display: block; overflow-x: auto; }
+        th, td { border: 1px solid #dfe2e5; padding: 6px 13px; }
+        th { background-color: #f6f8fa; font-weight: 600; }
+        tr:nth-child(2n) { background-color: #f6f8fa; }
+        
+        .mermaid { margin: 20px 0; text-align: center; }
+        details { margin-bottom: 10px; border: 1px solid #e1e4e8; border-radius: 6px; padding: 8px; }
+        summary { cursor: pointer; font-weight: bold; outline: none; }
+        
+        .edgeLabel {
+            font-size: 11px !important;
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            padding: 2px !important;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Documentation for <code>nnfs</code></h1>
+<blockquote><b>Note:</b> Analyzed via CLI command <code>nnfs</code>.</blockquote>
+<b>File Path:</b> <code>/usr/local/lib/python3.12/dist-packages/nnfs/__init__.py</code><br>
+<br>
+<h2>🚦 Navigator: How to Drive</h2>
+This section helps you understand how to run this library from the command line or entry points.<br>
+<br>
+<h3>💻 Installed CLI Commands</h3>
+This library installs the following system commands (accessible from terminal):<br>
+<table><thead><tr><th>Command</th><th>Entry Point (Function)</th></tr></thead><tbody><tr><td><code>nnfs</code></td><td><code>nnfs.console.nnfs:main</code></td></tr></tbody></table>
+<br>
+- ✅ <b>Target Match</b>: You are analyzing the package backing the command <code>nnfs</code>.<br>
+<br>
+<h3>🐍 Python API Usage (Inferred)</h3>
+Since no CLI entry point was found, here are the likely <b>Python API entry points</b> for your script:<br>
+<br>
+<h4>🚀 Top 20 Recommended Entry Points</h4>
+<table><thead><tr><th>Type</th><th>API</th><th>Description</th></tr></thead><tbody><tr><td><code>ƒ</code></td><td><b>nnfs.init</b>(dot_precision_workaround, default_dtype, random_seed)</td><td>No description.</td></tr></tbody></table>
+<br>
+<blockquote><b>Note:</b> Bold parameters are required. Others are optional.</blockquote>
+<br>
+<h4>🧩 Code Snippets (Auto-Generated)</h4>
+<br>
+<pre style="background:#f4f4f4; padding:10px; border-radius:5px;"><code>import nnfs
+
+# --- Top 20 Ranked Functions ---
+# 1. init
+result_1 = nnfs.init()</code></pre>
+<br>
+<br>
+_No explicit <code>argparse</code> configuration detected in the main module._<br>
+<br>
+<br>
+<h2>📊 Network &amp; Architecture Analysis</h2>
+<h3>🌍 Top 20 External Dependencies</h3>
+<table><thead><tr><th>Library</th><th>Usage Count</th></tr></thead><tbody><tr><td><b>_frozen_importlib_external</b></td><td>8</td></tr><tr><td><b>_frozen_importlib</b></td><td>8</td></tr></tbody></table>
+<br>
+<br>
+<h3>🕸️ Network Metrics (Advanced)</h3>
+<h4>👑 Top 20 Modules by PageRank (Authority)</h4>
+<table><thead><tr><th>Rank</th><th>Module</th><th>Score</th><th>Type</th><th>Role</th></tr></thead><tbody><tr><td>1</td><td><code>_frozen_importlib_external</code></td><td>0.2484</td><td>External</td><td>External Lib</td></tr><tr><td>2</td><td><code>_frozen_importlib</code></td><td>0.2484</td><td>External</td><td>External Lib</td></tr><tr><td>3</td><td><code>core</code></td><td>0.0734</td><td>Internal</td><td>Data Processing</td></tr><tr><td>4</td><td><code>datasets.sine</code></td><td>0.0670</td><td>Internal</td><td>Data Processing</td></tr><tr><td>5</td><td><code>datasets.spiral</code></td><td>0.0670</td><td>Internal</td><td>Data Processing</td></tr><tr><td>6</td><td><code>datasets.vertical</code></td><td>0.0670</td><td>Internal</td><td>Data Processing</td></tr><tr><td>7</td><td><code>nnfs</code></td><td>0.0572</td><td>Internal</td><td>Utility / Core</td></tr><tr><td>8</td><td><code>console</code></td><td>0.0572</td><td>Internal</td><td>Unknown</td></tr><tr><td>9</td><td><code>console.nnfs</code></td><td>0.0572</td><td>Internal</td><td>Utility / Core</td></tr><tr><td>10</td><td><code>datasets</code></td><td>0.0572</td><td>Internal</td><td>Utility / Core</td></tr></tbody></table>
+<br>
+<br>
+<h3>🗺️ Dependency &amp; Architecture Map</h3>
+<br>
+<div class="mermaid" style="overflow-x: auto;">
+graph TD
+    classDef core fill:#f96,stroke:#333,stroke-width:2px;
+    classDef external fill:#9cf,stroke:#333,stroke-width:1px;
+    id_8[&quot;nnfs&quot;] -.-&gt; id_9[&quot;_frozen_importlib_external&quot;]
+    class id_8 core;
+    class id_9 external;
+    id_8[&quot;nnfs&quot;] -.-&gt; id_2[&quot;_frozen_importlib&quot;]
+    class id_8 core;
+    class id_2 external;
+    id_8[&quot;nnfs&quot;] --&gt; id_5[&quot;core&quot;]
+    class id_8 core;
+    class id_5 core;
+    id_5[&quot;core&quot;] -.-&gt; id_9[&quot;_frozen_importlib_external&quot;]
+    class id_5 core;
+    class id_9 external;
+    id_5[&quot;core&quot;] -.-&gt; id_2[&quot;_frozen_importlib&quot;]
+    class id_5 core;
+    class id_2 external;
+    id_6[&quot;console&quot;] -.-&gt; id_9[&quot;_frozen_importlib_external&quot;]
+    class id_6 core;
+    class id_9 external;
+    id_6[&quot;console&quot;] -.-&gt; id_2[&quot;_frozen_importlib&quot;]
+    class id_6 core;
+    class id_2 external;
+    id_3[&quot;nnfs&quot;] -.-&gt; id_9[&quot;_frozen_importlib_external&quot;]
+    class id_3 core;
+    class id_9 external;
+    id_3[&quot;nnfs&quot;] -.-&gt; id_2[&quot;_frozen_importlib&quot;]
+    class id_3 core;
+    class id_2 external;
+    id_0[&quot;datasets&quot;] -.-&gt; id_9[&quot;_frozen_importlib_external&quot;]
+    class id_0 core;
+    class id_9 external;
+    id_0[&quot;datasets&quot;] -.-&gt; id_2[&quot;_frozen_importlib&quot;]
+    class id_0 core;
+    class id_2 external;
+    id_0[&quot;datasets&quot;] --&gt; id_7[&quot;sine&quot;]
+    class id_0 core;
+    class id_7 core;
+    id_0[&quot;datasets&quot;] --&gt; id_1[&quot;spiral&quot;]
+    class id_0 core;
+    class id_1 core;
+    id_0[&quot;datasets&quot;] --&gt; id_4[&quot;vertical&quot;]
+    class id_0 core;
+    class id_4 core;
+    id_7[&quot;sine&quot;] -.-&gt; id_9[&quot;_frozen_importlib_external&quot;]
+    class id_7 core;
+    class id_9 external;
+    id_7[&quot;sine&quot;] -.-&gt; id_2[&quot;_frozen_importlib&quot;]
+    class id_7 core;
+    class id_2 external;
+    id_1[&quot;spiral&quot;] -.-&gt; id_9[&quot;_frozen_importlib_external&quot;]
+    class id_1 core;
+    class id_9 external;
+    id_1[&quot;spiral&quot;] -.-&gt; id_2[&quot;_frozen_importlib&quot;]
+    class id_1 core;
+    class id_2 external;
+    id_4[&quot;vertical&quot;] -.-&gt; id_9[&quot;_frozen_importlib_external&quot;]
+    class id_4 core;
+    class id_9 external;
+    id_4[&quot;vertical&quot;] -.-&gt; id_2[&quot;_frozen_importlib&quot;]
+    class id_4 core;
+    class id_2 external;
+</div>
+<br>
+<br>
+<h2>🚀 Global Execution Flow &amp; Extraction Guide</h2>
+This graph visualizes how data flows between functions across the entire project.<br>
+<br>
+<div class="mermaid" style="overflow-x: auto;">
+graph TD
+    classDef main fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef func fill:#fff,stroke:#333,stroke-width:1px;
+    f_4[&quot;main&quot;] --&gt; f_5[&quot;print_usage&quot;]
+    class f_4 main;
+    class f_5 func;
+    f_4[&quot;main&quot;] --&gt; f_2[&quot;info&quot;]
+    class f_4 main;
+    class f_2 func;
+    f_4[&quot;main&quot;] --&gt; f_0[&quot;code&quot;]
+    class f_4 main;
+    class f_0 func;
+    f_3[&quot;init&quot;] --&gt;|method&lt;br&gt;default_dtype| f_1[&quot;enclose&quot;]
+    class f_3 func;
+    class f_1 func;
+</div>
+<br>
+<br>
+<h3>✂️ Navigator: Snippet Extractor</h3>
+Want to use a specific function without the whole library? Here is the <b>Dependency Closure</b> for <b>Top 20</b> key functions.<br>
+<h4>To extract <code>main</code>:</h4>
+<blockquote>You need these <b>4</b> components:</blockquote>
+<code>code, info, main, print_usage</code><br>
+<br>
+<h4>To extract <code>init</code>:</h4>
+<blockquote>You need these <b>2</b> components:</blockquote>
+<code>enclose, init</code><br>
+<br>
+<h2>📑 Top-Level API Contents &amp; Logic Flow</h2>
+<h3>🔧 Functions</h3>
+<h4><code>init(dot_precision_workaround=True, default_dtype=&#x27;float32&#x27;, random_seed=0)</code></h4>
+<blockquote>No documentation available.</blockquote>
+<details><summary>Full Docstring</summary><br>
+<br>
+<br>
+<pre style="background:#f4f4f4; padding:10px; border-radius:5px;"><code>No documentation available.</code></pre>
+<br>
+</details><br>
+<br>
+
+    <!-- Import Mermaid.js -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ 
+            startOnLoad: true, 
+            maxTextSize: 1000000,  
+            maxEdges: 100000, 
+            theme: 'default',
+            flowchart: { 
+                useMaxWidth: false, 
+                htmlLabels: true,
+                rankSpacing: 150, 
+                nodeSpacing: 100,
+                curve: 'basis' 
+            } 
+        });
+    </script>
+</body>
+</html>
+    
