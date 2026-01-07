@@ -74,7 +74,7 @@ Hung-yi Lee in YouTube
 
     [2022 Courses](https://www.youtube.com/playlist?list=PLJV_el3uVTsPM2mM-OQzJXziCGJa8nJL8)
 
-    ![alt text](image.png)
+    ![alt text](./Figs/2.png)
 
 ### Practice :
 
